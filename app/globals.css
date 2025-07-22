@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,15 +11,48 @@
   
   html {
     scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
   
   body {
-    @apply bg-dark-900 text-white;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    @apply bg-ink-900 text-ink-50;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    user-select: none;
+    background: linear-gradient(135deg, #0f1419 0%, #212529 50%, #343a40 100%);
+  }
+  
+  /* Ensure cursor is hidden on all interactive elements */
+  a, button, input, textarea, select, [role="button"], [tabindex] {
+    cursor: none !important;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-800;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-600 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-500;
+  }
+  
+  /* Selection styles */
+  ::selection {
+    @apply bg-blood-500/20 text-ink-50;
+  }
+  
+  ::-moz-selection {
+    @apply bg-blood-500/20 text-ink-50;
   }
 }
 
@@ -30,6 +65,73 @@
     cursor: auto !important;
   }
   
+  /* Professional button styles */
+  .btn-primary {
+    @apply px-8 py-4 bg-blood-600 hover:bg-blood-700 text-white font-semibold rounded-lg transition-all duration-300 border border-blood-500/50 hover:border-blood-400/50 shadow-lg hover:shadow-xl hover:shadow-blood-500/25;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 bg-transparent border border-ink-400/30 hover:border-ink-300/50 text-ink-300 hover:text-ink-100 font-semibold rounded-lg transition-all duration-300;
+  }
+  
+  .btn-gold {
+    @apply px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-gold-500/25;
+  }
+  
+  /* Professional card styles */
+  .card {
+    @apply bg-ink-800/50 backdrop-blur-sm border border-ink-700/50 rounded-xl p-6 hover:border-ink-600/50 transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:bg-ink-800/70 hover:shadow-2xl hover:shadow-ink-900/50 hover:-translate-y-1;
+  }
+  
+  /* Professional text styles */
+  .text-gradient {
+    @apply bg-gradient-to-r from-ink-50 to-ink-300 bg-clip-text text-transparent;
+  }
+  
+  .text-gold {
+    @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
+  }
+  
+  .text-blood {
+    @apply bg-gradient-to-r from-blood-400 to-blood-600 bg-clip-text text-transparent;
+  }
+  
+  /* Professional section styles */
+  .section-padding {
+    @apply py-24 px-6;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  /* Professional animation classes */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out;
+  }
+  
+  /* Professional glass effect */
+  .glass {
+    @apply bg-ink-800/20 backdrop-blur-md border border-ink-700/30;
+  }
+  
+  .glass-strong {
+    @apply bg-ink-800/40 backdrop-blur-lg border border-ink-600/40;
+  }
+  
+  /* Mobile fallback */
   @media (max-width: 768px) {
     * {
       cursor: auto !important;
@@ -46,7 +148,44 @@
     mix-blend-mode: multiply;
   }
   
+  .mix-blend-screen {
+    mix-blend-mode: screen;
+  }
+  
   .backdrop-blur-xs {
     backdrop-filter: blur(2px);
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+  
+  .backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+  }
+  
+  .backdrop-blur-xl {
+    backdrop-filter: blur(24px);
+  }
+  
+  /* Professional spacing utilities */
+  .space-y-section > * + * {
+    @apply mt-24;
+  }
+  
+  .space-y-large > * + * {
+    @apply mt-16;
+  }
+  
+  .space-y-medium > * + * {
+    @apply mt-12;
+  }
+  
+  .space-y-small > * + * {
+    @apply mt-8;
   }
 } 
