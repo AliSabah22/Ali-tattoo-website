@@ -8,6 +8,10 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Vercel-specific optimizations
+  experimental: {
+    esmExternals: false,
+  },
 }
 
 module.exports = nextConfig 
