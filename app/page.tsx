@@ -190,10 +190,7 @@ const HomePage: React.FC = () => {
               <motion.div 
                 key={index}
                 variants={fadeInUp} 
-<<<<<<< HEAD
                 transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 className="text-center card p-6 relative overflow-hidden group"
                 data-cursor-magnetic
               >
@@ -248,10 +245,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 key={item.id}
                 variants={fadeInUp}
-<<<<<<< HEAD
                 transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 className="group relative overflow-hidden rounded-xl card card-hover"
                 data-cursor-magnetic
               >
@@ -394,10 +388,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-<<<<<<< HEAD
                 transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 className="card card-hover text-center p-8 relative overflow-hidden group"
                 data-cursor-magnetic
               >
@@ -465,10 +456,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-<<<<<<< HEAD
                 transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 className="card card-hover text-center p-8 relative overflow-hidden group"
                 data-cursor-magnetic
               >
@@ -531,10 +519,7 @@ const HomePage: React.FC = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-<<<<<<< HEAD
                 transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 className="card card-hover relative overflow-hidden group bg-ink-900/50 backdrop-blur-sm p-4"
                 data-cursor-magnetic
               >
@@ -610,10 +595,7 @@ const HomePage: React.FC = () => {
                 <motion.div
                   key={index + 3}
                   variants={fadeInUp}
-<<<<<<< HEAD
                   transition={{ duration: 0.6, ease: "easeOut" }}
-=======
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
@@ -698,11 +680,7 @@ const HomePage: React.FC = () => {
               viewport={{ once: true }}
               className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"
             >
-<<<<<<< HEAD
               <motion.div variants={fadeInUp} transition={{ duration: 0.6, ease: "easeOut" }} className="card p-6">
-=======
-              <motion.div variants={fadeInUp} className="card p-6">
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 <Mail className="w-8 h-8 text-blood-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Email</h3>
                 <a 
@@ -714,11 +692,7 @@ const HomePage: React.FC = () => {
                 </a>
               </motion.div>
 
-<<<<<<< HEAD
               <motion.div variants={fadeInUp} transition={{ duration: 0.6, ease: "easeOut" }} className="card p-6">
-=======
-              <motion.div variants={fadeInUp} className="card p-6">
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 <Phone className="w-8 h-8 text-gold-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Phone</h3>
                 <a 
@@ -730,11 +704,7 @@ const HomePage: React.FC = () => {
                 </a>
               </motion.div>
 
-<<<<<<< HEAD
               <motion.div variants={fadeInUp} transition={{ duration: 0.6, ease: "easeOut" }} className="card p-6">
-=======
-              <motion.div variants={fadeInUp} className="card p-6">
->>>>>>> 147fe208c96a84102e6c479a8f009fef7135ad0f
                 <MapPin className="w-8 h-8 text-blood-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Studio</h3>
                 <p className="text-ink-300">
