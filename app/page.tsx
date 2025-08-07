@@ -696,11 +696,11 @@ const HomePage: React.FC = () => {
                 <Phone className="w-8 h-8 text-gold-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Phone</h3>
                 <a 
-                  href="tel:+1234567890" 
+                  href="tel:+14378761206" 
                   className="text-gold-400 hover:text-gold-300 transition-colors duration-300"
                   data-cursor-magnetic
                 >
-                  +1 (234) 567-890
+                  (437) 876-1206
                 </a>
               </motion.div>
 
